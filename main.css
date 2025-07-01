@@ -9,6 +9,7 @@ body {
     background-color: #F4F2EC;
     flex-direction: column;
     display: flex;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -62,6 +63,11 @@ header ul li {
     line-height: normal;
 }
 
+header ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
 .news {
     display: flex;
     position: relative;
@@ -70,9 +76,11 @@ header ul li {
 }
 
 .news img {
+    width: 27.875rem;
+    height: 40.22875rem;
     position: absolute;
-    top: -2rem;
-    left: 73rem;
+    top: -1rem;
+    right: 1rem;
     transition: transform 0.5s ease;
 }
 
@@ -115,8 +123,12 @@ header ul li {
     margin-bottom: 12rem;
 }
 
+#newCatalogue {
+    position: relative;
+    margin-top: 20rem;
+}
+
 .catalogue h2 {
-    margin-top: 6rem;
     color: #000;
     font-size: 2.64713rem;
     font-style: normal;
@@ -133,7 +145,7 @@ header ul li {
 
 .imgConfig {
     cursor: pointer;
-    top: 5rem;
+    top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +168,7 @@ header ul li {
     font-size: 1.4rem;
     position: relative;
     z-index: 1;
-    top: 9rem;
+    top: 12rem;
 }
 
 .newsTable {
@@ -202,11 +214,14 @@ header ul li {
 }
 
 .aboutUs {
+    position: relative;
+    margin-top: 30rem;
+    margin-bottom: 10rem;
     display: flex;
     justify-content: center;
-    padding: 4rem 0rem 4rem 0;
     width: 100%;
 }
+
 
 footer p {
     padding: 1rem;
@@ -228,6 +243,7 @@ footer p {
 
 
 @media screen and (max-width: 767px) {
+
     header {
         display: flex;
         align-items: center;
@@ -264,10 +280,6 @@ footer p {
         margin-left: 0.5rem;
     }
 
-    .news {
-        flex-wrap: wrap;
-    }
-
     #winterArrived {
         position: absolute;
         width: 11.4375rem;
@@ -275,12 +287,120 @@ footer p {
         font-size: 1.546rem;
         font-style: normal;
         font-weight: 500;
-        margin-left: 2rem;
-        margin-top: 5rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
         white-space: normal;
         z-index: 1;
-        top: -3rem;
+        left: 1rem;
+        top: -6rem;
     }
 
+    .news img {
+        top: 0rem;
+        left: 9rem;
+        width: 13.9375rem;
+        height: 20.114375rem;
+    }
+
+    #check {
+        position: absolute;
+        color: white;
+        background-color: #000;
+        width: 6.2rem;
+        height: 1.95rem;
+        border: none;
+        font-size: 0.75rem;
+        cursor: pointer;
+        top: 11rem;
+        left: 2.5rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    #mainCatalogue .textRow {
+        position: relative;
+        top: 4rem;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .catalogueRow {
+        position: relative;
+        top: 0rem;
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .imgConfig {
+        top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.834375rem;
+        height: 7.964375rem;
+        border-radius: 1.09325rem;
+        background: #DEDBD3;
+        position: relative;
+    }
+
+    .imgConfig img {
+        z-index: 0;
+        position: absolute;
+        width: 6.665625rem;
+        height: 9.4375rem;
+        top: -1.5rem;
+    }
+
+    #mainCatalogue h2 {
+        position: relative;
+        font-size: 0.6875rem;
+        z-index: 1;
+        top: 5rem;
+    }
+
+    #newCatalogue {
+        position: relative;
+        margin-top: -5rem;
+    }
+
+    #newCatalogue .textRow {
+        position: relative;
+        top: 4rem;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .catalogueRow h2 {
+        font-size: 0.6875rem;
+        top: 6rem;
+    }
+
+    .aboutUs {
+        position: relative;
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .aboutUs img {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+
+
+    .textContainer {
+        font-size: 0.75rem;
+        text-align: left;
+        max-width: 16.75rem;
+    }
 
 }

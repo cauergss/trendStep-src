@@ -19,11 +19,10 @@
             <li>
                 Home
             </li>
-            <li>
-                Sobre
-            </li>
-            <li>
-                Contato
+            <li id="buttonAbout">
+                <a href="#aboutUs"> 
+                    Sobre 
+                </a>
             </li>
             <li>
                 <img class="imgHover" src="./assets/lupa.png" alt="Lupa">
@@ -41,22 +40,22 @@
     </section>
     <div class="aside">
         <div class="divisor">
-            <section class="catalogue">
-                <h2>Catálogo principal</h2>
+            <section id="mainCatalogue" class="catalogue">
+                <h2 class="textRow">Catálogo principal</h2>
                 <div class="catalogueRow">
-                    <article>
+                    <article class="mainCatalogueText">
                         <div class="imgConfig">
                             <img class="imgHover" src="./assets/Camisa bege.png" alt="">
                             <h2>Seção masculina</h2>
                         </div>
                     </article>
-                    <article>
+                    <article class="mainCatalogueText">
                         <div class="imgConfig">
                             <img class="imgHover" src="./assets/Roupa branca feminina.png" alt="">
                             <h2>Seção feminina</h2>
                         </div>
                     </article>
-                    <article>
+                    <article class="mainCatalogueText">
                         <div class="imgConfig">
                             <img class="imgHover" src="./assets/sapato.png" alt="">
                             <h2>Seção de calçados</h2>
@@ -65,8 +64,8 @@
                 </div>
             </section>
         </div>
-        <section class="catalogue">
-            <h2>Novidades</h2>
+        <section id="newCatalogue" class="catalogue">
+            <h2 class="textRow">Novidades</h2>
             <div class="newsTable">
                 <div class="catalogueRow">
                     <article>
@@ -90,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutUs">
+        <section id="aboutUs" class="aboutUs">
             <article>
                 <div class="storeInfoContainer">
                     <div class="imageContainer">
@@ -114,6 +113,8 @@
             <p>TrendStep - Todos os direitos reservados.</p>
         </footer>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
