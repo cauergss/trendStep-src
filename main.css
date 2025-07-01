@@ -128,7 +128,7 @@ header ul li {
 .catalogueRow {
     justify-content: center;
     display: flex;
-    gap: 12rem;
+    gap: 20rem;
 }
 
 .imgConfig {
@@ -141,7 +141,6 @@ header ul li {
     height: 20.01119rem;
     border-radius: 1.09325rem;
     background: #DEDBD3;
-    margin-left: 10rem;
     position: relative;
 }
 
@@ -225,4 +224,63 @@ footer p {
 
 .aside {
     position: relative;
+}
+
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        background-color: #F8F5F3;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li {
+        font-size: 0.95rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    header img {
+        width: 11.4375rem;
+        height: 5.375rem;
+        width: 1.2rem;
+        height: auto;
+        margin-left: 0.5rem;
+    }
+
+    .news {
+        flex-wrap: wrap;
+    }
+
+    #winterArrived {
+        position: absolute;
+        width: 11.4375rem;
+        color: #000;
+        font-size: 1.546rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 2rem;
+        margin-top: 5rem;
+        white-space: normal;
+        z-index: 1;
+        top: -3rem;
+    }
+
+
 }
