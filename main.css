@@ -246,7 +246,6 @@ footer p {
     position: relative;
 }
 
-
 @media screen and (max-width: 640px) {
 
     header {
@@ -408,4 +407,114 @@ footer p {
         max-width: 16.75rem;
     }
 
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    header h1 {
+        position: relative;
+        left: 1.56rem;
+        font-size: 2.8125rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li {
+        font-size: 1.3rem;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    #winterArrived {
+        font-size: 3.0625rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        white-space: normal;
+        z-index: 1;
+        left: 0.75rem;
+        bottom: 5rem;
+        max-width: 35rem;
+    }
+
+    .news img {
+        left: 31.2rem;
+        width: 18.75rem;
+        height: 23.84375rem;
+        right: 2.94rem;
+    }
+
+    #check {
+        position: absolute;
+        color: white;
+        background-color: #000;
+        width: 13.6875rem;
+        height: 3.63894rem;
+        border: none;
+        font-size: 1.5625rem;
+        cursor: pointer;
+        top: 14.46rem;
+        left: 6rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    .catalogueRow {
+        gap: 3rem;
+    }
+
+    #mainCatalogue {
+        position: relative;
+        bottom: 10rem;
+    }
+
+
+    #mainCatalogue .textRow {
+        position: relative;
+        font-size: 2.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .imgConfig {
+        top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12.6875rem;
+        height: 15.875rem;
+        border-radius: 1.09325rem;
+        background: #DEDBD3;
+        position: relative;
+    }
+
+    .imgConfig img {
+        z-index: 0;
+        position: absolute;
+        width: 13.54481rem;
+        height: 17.1rem;
+        top: -1.5rem;
+    }
+
+    #newCatalogue {
+        margin-top: 0rem;
+    }
+
+    .aboutUs {
+        margin-top: 30rem;
+    }
+
+
+    footer {
+        font-size: 1.5rem;
+    }
 }
