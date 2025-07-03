@@ -111,6 +111,11 @@ header ul li a {
     margin-left: 20rem;
 }
 
+#check a {
+    color: white;
+    text-decoration: none;
+}
+
 #check {
     transition: transform 0.5s ease;
 }
@@ -242,7 +247,7 @@ footer p {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 640px) {
 
     header {
         display: flex;
